@@ -1,0 +1,273 @@
+% !TeX program = lualatex
+\documentclass{simplecv}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{dirtytalk}
+\usepackage{multicol}
+\usepackage[backend=biber,style=authoryear,sorting=ynt]{biblatex}
+\usepackage{lipsum}
+
+\hypersetup{
+    colorlinks = true,
+    urlcolor   = AccentTeal
+}
+
+\addbibresource{mybiblio.bib}
+
+\name{Roberto Olvera Hernández}
+\title{BSc. Biotechonology Engineering}
+\email{roberto.olvhez@gmail.com}
+\location{Zapopan}{Jalisco}{MX}
+\phone{+52}{33-1540-9988}
+\linkedin{\href{https://www.linkedin.com/in/rob-olvhez/}{rob-olvhez}}
+\github{\href{https://github.com/robolvhez}{robolvhez}}
+
+\begin{document}
+\setmainfont{XCharter} % Sans-serif. Body. Sans can also be set as main font. Good options include: {XCharter, Heuristica, QTBasker}
+\setsansfont{Inter} % Sans. Titles. Good options include: {Inter, Roboto, Cabin}
+\nocite{*}
+% L = Añadir localizacion; vacio = no incluir
+\makecvheader{}
+\thispagestyle{firstpage}
+
+% ------------
+% PROFFESIONAL PROFILE
+% ------------
+{\small\sffamily\setlength{\parskip}{6pt}%
+
+}\vspace{0.75em}
+
+% ------------
+% EDUCATION
+% ------------
+\vspace{0.5em}
+\cvsection{\education Education}
+    \cvevent{B.Sc. in Biotechnology Engineering} % Carrera/posgrado/puesto
+    {Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO)} % Institución/empresa
+    {} % Lugar
+    {2018} % Inicio
+    {ongoing} % Fin
+    {
+        \textbf{Bachelor thesis:} Genome-Wide Association Study (GWAS) for the identification of genes related to hydrotropic response in native maize (\textit{Zea mays} L.) from Mexico.
+    } % Texto
+    
+\cvsubsection{Research experiences}
+
+    \cvevent{GWAS for the characterization of native maize from Mexico}
+        {Biotechnology Institute, National Autonomous University of Mexico (IBt -- UNAM)}
+        {}
+        {2023}
+        {2023}
+        {%
+            \vspace{-11pt}
+            \begin{itemize}[leftmargin=*]
+            \setlength{\itemsep}{0cm}
+              \item Statistical analysis in the phenotypic response of maize to drought.
+              \item Data wrangling of genomic databases with R.
+              \item Genome-Wide Association Analysis (GWAS) using tools such as GAPIT and TASSEL.
+              \item Ancestry Analysis with ADMIXTURE (Linux Shell).
+              \item NGS DArTseq sequencing protocol.
+            \end{itemize}
+        }
+
+    \cvevent{Project Leader - International Competition}
+    {iGEM Design League 2022 (Latin America)}
+    {}
+    {2021}
+    {2022}
+    {%
+        \vspace{-11pt}
+        \begin{itemize}[leftmargin=*]
+        \setlength{\itemsep}{0cm}
+          \item Awarded Silver Medal and Best Project Presentation.
+          \item Project at the Latin American level.
+          \item Interviews with farmers and entrepreneurs for market strategies.
+          \item Training of the technical team in Synthetic Biology.
+        \end{itemize}
+    }
+
+    % \cvevent{Participant - Worldwide Competition (iGEM 2019)}
+    % {iGEM 2019 (Boston, USA)}
+    % {}
+    % {2019}
+    % {2020}
+    % {%
+    %     \vspace{-11pt}
+    %     \begin{itemize}[leftmargin=*]
+    %     \setlength{\itemsep}{0cm}
+    %       \item Interviews for market strategies and project validation.
+    %       \item Analysis of government databases for wastewater treatment plants.
+    %     \end{itemize}
+    % }
+
+% ------------
+% EXPERIENCE
+% ------------
+\cvsection{\job Professional \& Academic Experience}
+
+    %% Income Analyst - TOKA Internacional
+    \cvevent{Income Analyst}
+    {TOKA Internacional}
+    {}
+    {2024}
+    {ongoing}
+    {
+     \vspace{-11pt}
+     \begin{itemize}[leftmargin=*]
+     \setlength{\itemsep}{0cm}
+         \item Income monitoring and diagnosis within the payment cards market.
+         \item Development of SQL/R scripts for massive data analysis.
+         \item Generation and updating Power BI productive dashboards.
+         \item Mapping and standardization of management processes such as billing.
+     \end{itemize}
+    }
+
+    %% Process and Automation Engineer %%
+    %\cvevent{Process and Automation Engineer}
+    %{GDL Development}
+    %{}
+    %{2023}
+    %{2024}
+    %{
+    %    \textbf{Achievements:}
+    %    \begin{itemize}[leftmargin=*]
+    %    \setlength{\itemsep}{0cm}
+    %        \item Automation of historical inventory reports using R and SQL scripts via ODBC/MySQL connections, eliminating the need to generate multiple Excel files and backing up accessible information in an established database.
+    %        \item Automation of annual inventory analysis. Reduced from 3 days to 1 day with the implementation of an R script.
+    %        \item Optimized piece labeling productivity for concession by 120\%, freeing up 5 hours for shipment preparation and reducing the need for temporary staff.
+    %    \end{itemize}
+    %
+    %    \textbf{Activities:}
+    %    \begin{itemize}[leftmargin=*]
+    %    \setlength{\itemsep}{0cm}
+    %        \item Mapping activities in all company departments.
+    %        \item Analysis of indicators for the operations area.
+    %        \item Planning the purchase of supplies for the web department.
+    %        \item Creating visual guides for collaborators in operations.
+    %    \end{itemize}
+    %}
+
+    %% Animal Health Diagnostics Trainee %%
+    \cvevent{Animal Health Diagnostics Trainee}
+        {Boehringer Ingelheim --- Vetmedica}
+        {}
+        {2021}
+        {2022}
+        {%
+            \vspace{-11pt}
+            \begin{itemize}[leftmargin=*]
+            \setlength{\itemsep}{0cm}
+                \item Next Generation Sequencing (NGS) protocols for viral surveillance in poultry and swine.
+                \item Implementation of Power BI in the marketing team.
+                \item Management of relational databases with SQL.
+                \item Automation of document reading using AI workflows.
+                \item Execution of serological tests (ELISA) and molecular biology tests (RFLP and qRT-PCR).
+                \item Constant contact with clients.
+                \item Supply of reagents and materials in the serology lab.
+            \end{itemize}
+        }
+
+
+    
+% ------------
+% HABILIDADES
+% ------------
+\newpage
+\setlength\columnsep{0.33in}
+\begin{multicols}{2}
+\cvsection{\large\lang Languages}
+\vspace{-8pt}
+\textbf{Spanish (native)}\\
+    \cvskill{Writing}{5}
+    \cvskill{Reading}{5}
+    \cvskill{Conversation}{5}
+
+\medskip
+
+\textbf{German}\\
+    \cvskill{Writing}{1}
+    \cvskill{Reading}{1}
+    \cvskill{Conversation}{1}
+
+\bigskip
+
+\cvsection{\large\courses Complementary education} % Cursos, talleres y certificaciones.
+\vspace{-8pt}
+{\small
+  \begin{itemize}[leftmargin=*]
+  \setlength{\itemsep}{6pt}
+    % \item \textbf{Workshop: \say{Deep Dive into Network Protocols}}\\January 2024 (8 hours) at \textit{Fireship}.
+    \item \textbf{Course: \say{Bioinformatic Tools for High-Throughput Sequencing}}\\July 2023 (61 hours) at \textit{IBt - UNAM (USMBB)}. Teacher Assistant in the "Programming with R" workshop.
+    \item \textbf{Complementary coursework: \say{Production planning}}\\January - May 2023 at \textit{ITESO}.
+    \item \textbf{Complementary coursework: \say{Information design}}\\January - May 2023 at \textit{ITESO}.
+    \item \textbf{Complementary coursework:  \say{Machine Learning Methods (Python)}}\\January - May 2022 at \textit{ITESO}
+    \item \textbf{Complementary coursework: \say{PMI's Project Management}}\\August - December 2021 at \textit{ITESO}.
+    \item \textbf{Course: "Synthetic Biology and Genetic Circuits 101"}\\July 2021 (28 hours) at \textit{Scintia}.
+    \item \textbf{Workshop: "Malice Analysis for your project"}\\May 2021 (12 hours) at \textit{Engineering Biology Research Consortium (EBRC)}.
+    \item \textbf{Course: \say{Agile Process, Project, and Program Controls}}\\February 2021 (28 hours), online course from \textit{HarvardX}.
+    \item \textbf{Data Science: R Basics}\\August 2020 (60 hours), online course from \textit{HarvardX}.
+  \end{itemize}
+}
+
+\bigskip
+
+\cvsection{\large\hardskill Hard skills}
+\vspace{-6pt}
+\textbf{Software \& Tools}\\
+    % \cvskill{Linux (Desktop)}{5}
+    \cvskill{Archlinux (daily-driver)}{5}
+    \cvskill{CentOS (server-driver)}{4}
+    \cvskill{Git}{4}
+    % \cvskill{Vim/NeoVim}{4}
+    \cvskill{PowerBI}{4}
+    \cvskill{Tableau}{4}
+    \cvskill{Adobe Suite}{3}
+    % \cvskill{MBA3}{3}
+    % \cvskill{SAP B1}{2}
+    \cvskill{Amazon AWS}{1}
+    \cvskill{Microsoft Azure}{1}
+
+\medskip
+
+\textbf{Programming Languages}\\
+    \cvskill{R}{5}
+    \cvskill{BASH}{5}
+    \cvskill{SQL}{4}
+    \cvskill{Python}{3}
+    \cvskill{MATLAB}{3}
+    \cvskill{VBA}{2}
+
+\bigskip
+
+\cvsection{\large\group Softskills} % Cursos, talleres y certificaciones.
+
+\cvtag{Collaborative work}
+\cvtag{Social skills}
+\cvtag{Effective communication}
+\cvtag{Multilingual}
+\cvtag{Human/Social Oriented}
+\cvtag{Multidisciplinary teams}
+\cvtag{Leadership}
+\cvtag{Management}
+\cvtag{Design (UI) and creativity}
+\cvtag{Self-Thought Drive}
+
+
+% \cvsection{\publications Publicaciones}
+% \defbibnote{mynote}{$^*$ Indica contribuciones iguales;\\$^\dagger$ Indica investigador(a) principal; y\\ \textbf{bold} Indica compañeros(as) de laboratorio.}
+
+% \cvsubsection{Publicados (peer-reviewed)}
+
+% \begin{spacing}{1.25}
+%     \printbibliography[heading=none,keyword=peerreviewed,prenote=mynote]
+% \end{spacing}
+
+% \cvsubsection{En revisión (pre-prints)}
+
+% \begin{spacing}{1.25}
+%     \printbibliography[heading=none]
+% \end{spacing}
+\end{multicols}
+\end{document}
