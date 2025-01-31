@@ -35,8 +35,8 @@
 \newcommand{\interests}{\faLightbulbO\hspace{0.5em}}
 \newcommand{\competences}{\faGroup\hspace{0.5em}}
 \newcommand{\education}{\faGraduationCap\hspace{0.5em}}
-\newcommand{\job}{\faBriefcase\hspace{0.5em}}
 \newcommand{\research}{\faFlask\hspace{0.5em}}
+\newcommand{\job}{\faBriefcase\hspace{0.5em}}
 \newcommand{\hardskill}{\faGears\hspace{0.5em}}
 \newcommand{\group}{\faGroup\hspace{0.5em}}
 \newcommand{\other}{\faPlusCircle\hspace{0.5em}}
@@ -84,10 +84,11 @@
 % CV Section
 % --------------------------
 \newcommand{\cvsection}[1]{
-    \begin{center}
+    %\begin{center}
         {\large\bfseries\color{AccentBlue}\sffamily #1}\\
-        {\color{AccentBlue}\rule{\linewidth}{1.25pt}\par}
-    \end{center}
+        %{\color{AccentBlue}\rule{\linewidth}{1.25pt}\par}
+        {\color{AccentBlue}\rule{\linewidth}{1.25pt}\smallskip}
+    %\end{center}
 }
 
 % --------------------------
