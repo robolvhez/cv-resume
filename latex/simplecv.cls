@@ -35,8 +35,8 @@
 \newcommand{\interests}{\faLightbulbO\hspace{0.5em}}
 \newcommand{\competences}{\faGroup\hspace{0.5em}}
 \newcommand{\education}{\faGraduationCap\hspace{0.5em}}
-\newcommand{\job}{\faBriefcase\hspace{0.5em}}
 \newcommand{\research}{\faFlask\hspace{0.5em}}
+\newcommand{\job}{\faBriefcase\hspace{0.5em}}
 \newcommand{\hardskill}{\faGears\hspace{0.5em}}
 \newcommand{\group}{\faGroup\hspace{0.5em}}
 \newcommand{\other}{\faPlusCircle\hspace{0.5em}}
@@ -84,10 +84,11 @@
 % CV Section
 % --------------------------
 \newcommand{\cvsection}[1]{
-    \begin{center}
+    %\begin{center}
         {\large\bfseries\color{AccentBlue}\sffamily #1}\\
-        {\color{AccentBlue}\rule{\linewidth}{1.25pt}\par}
-    \end{center}
+        %{\color{AccentBlue}\rule{\linewidth}{1.25pt}\par}
+        {\color{AccentBlue}\rule{\linewidth}{1.25pt}\smallskip}
+    %\end{center}
 }
 
 % --------------------------
@@ -103,14 +104,20 @@
 % CV Event
 % --------------------------
 \newcommand{\cvevent}[6]{
-    \begin{tabular*}{\linewidth}{p{0.125\linewidth} p{0.85\linewidth}}
-        {\small\it #4 - #5}  & { \small{\bf#1} }\\  % Position
-                             & { \footnotesize {\it #2} \hfill \color{gray} #3 }
-        \ifstrequal{#6}{}{}{ % Detects if there is content.
-                          \\ & {\footnotesize #6}
-        } % Any Text (not required)                          
-    \end{tabular*}
-    \vspace{-0.5em}
+\begin{tabular*}{\linewidth}{p{0.12\linewidth} p{0.83\linewidth}}
+    \ifstrequal{#4}{}{\small #5}{\small #4 - #5} % Any Text (not required)                          
+    & {\small\bf #1}\\
+    {} 
+    & {\sffamily\footnotesize #2 \hfill #3}
+    \ifstrequal{#6}{}{}{\\&{\footnotesize #6}} % Any Text (not required)                          
+\end{tabular*}
+\vspace{-0.5em}
+%    \begin{tabular*}{\linewidth}{p{0.125\linewidth} p{0.85\linewidth}}
+%        {\small\it #4 - #5} & {\bf #1}\\ % Position
+%                            & {\sffamily\footnotesize\color{gray} #2 \hfill  #3}
+%        \ifstrequal{#6}{}{}{\\&{\footnotesize #6}} % Any Text (not required)                          
+%    \end{tabular*}
+%    \vspace{-0.5em}
 }
 
 % --------------------------
