@@ -58,6 +58,15 @@
 \definecolor{TitleBlack}{HTML}{2E2E2E}
 
 % --------------------------
+% Hyperlink configuration
+% --------------------------
+\RequirePackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  allcolors = AccentTeal
+}
+
+% --------------------------
 % CV Header
 % --------------------------
 \newcommand{\makecvheader}[1]{
@@ -97,42 +106,44 @@
 \newcommand{\cvsubsection}[1]{
     \smallskip
     {\normalsize\bfseries\color{AccentTeal}\sffamily #1}
-    \medskip
+    \smallskip
 }
 
 % --------------------------
 % CV Event
 % --------------------------
 \newcommand{\cvevent}[6]{
-\begin{tabular*}{\linewidth}{p{0.12\linewidth} p{0.83\linewidth}}
-    \ifstrequal{#4}{}{\small #5}{\small #4 - #5} % Any Text (not required)                          
-    & {\small\bf #1}\\
-    {} 
-    & {\sffamily\footnotesize #2 \hfill #3}
-    \ifstrequal{#6}{}{}{\\&{\footnotesize #6}} % Any Text (not required)                          
-\end{tabular*}
-\vspace{-0.5em}
-%    \begin{tabular*}{\linewidth}{p{0.125\linewidth} p{0.85\linewidth}}
-%        {\small\it #4 - #5} & {\bf #1}\\ % Position
-%                            & {\sffamily\footnotesize\color{gray} #2 \hfill  #3}
-%        \ifstrequal{#6}{}{}{\\&{\footnotesize #6}} % Any Text (not required)                          
-%    \end{tabular*}
-%    \vspace{-0.5em}
+  \begin{tabular*}{\linewidth}{p{0.12\linewidth} p{0.83\linewidth}}
+      \ifstrequal{#4}{}{\small #5}{\small #4 - #5} % Any Text (not required)                          
+      & {\small\bf #1}\\
+      {} 
+      & {\sffamily\footnotesize #2 \hfill #3}
+      \ifstrequal{#6}{}{}{\\&{\footnotesize #6}} % Any Text (not required)                          
+  \end{tabular*}
+  \smallskip
+  % \vspace{-0.5em}
+  %    \begin{tabular*}{\linewidth}{p{0.125\linewidth} p{0.85\linewidth}}
+  %        {\small\it #4 - #5} & {\bf #1}\\ % Position
+  %                            & {\sffamily\footnotesize\color{gray} #2 \hfill  #3}
+  %        \ifstrequal{#6}{}{}{\\&{\footnotesize #6}} % Any Text (not required)                          
+  %    \end{tabular*}
+  %    \vspace{-0.5em}
 }
 
 % --------------------------
 % CV Skill
 % --------------------------
 \newcommand{\cvskill}[2]{%
-{\small\color{darkgray}\sffamily #1}\hfill
-\foreach \x in {1,...,5}{%
-  \space{\ifnumgreater{\x}{#2}{\color{black!30}}{\color{AccentTeal}}\faCircle}}\par%
+  {\small\color{darkgray}\sffamily #1}\hfill
+  \foreach \x in {1,...,5}{%
+    \space{\ifnumgreater{\x}{#2}{\color{black!30}}{\color{AccentTeal}}\faCircle}}\par%
 } 
 
 % --------------------------
-% CV Skill
+% CV Tag
 % --------------------------
 \newcommand{\cvtag}[1]{%
+  \vspace{-0.5cm}
   \tikz[baseline]\node[anchor=base,draw=black!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{\small\sffamily #1};
 }
 
@@ -173,3 +184,19 @@
     }
 
 \endinput
+
+% --------------------------
+% Biblatex format
+% --------------------------
+\renewbibmacro*{cite}{%
+  \iffieldundef{shorthand}
+    {\ifthenelse{\ifnameundef{labelname}\OR\iffieldundef{labelyear}}
+       {\usebibmacro{cite:label}%
+        \setunit{\printdelim{nonameyeardelim}}}
+       {\printnames{labelname}%
+        \setunit{\printdelim{nameyeardelim}}}%
+     \usebibmacro{cite:labeldate+extradate}%
+     \setunit{\addcomma\space}%
+     \usebibmacro{journal}}
+    {\usebibmacro{cite:shorthand}}}
+

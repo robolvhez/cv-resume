@@ -1,23 +1,20 @@
 % !TeX program = lualatex
 \documentclass{simplecv}
-\usepackage[utf8]{inputenc}
+% \usepackage[utf8]{inputenc}
+\usepackage{csquotes}
 \usepackage[spanish]{babel}
 \usepackage[margin=0.75in]{geometry}
-\usepackage{hyperref}
 \usepackage{dirtytalk}
 \usepackage{multicol}
-\usepackage[backend=biber,style=apa,sorting=ynt]{biblatex}
+\usepackage[backend=biber,citestyle=authoryear,bibstyle=apa]{biblatex}
 \usepackage{lipsum}
 
-\hypersetup{
-    colorlinks = true,
-    urlcolor   = AccentTeal
-}
-
+% Bibliography setup
 \addbibresource{mybiblio.bib}
 
+% Header information
 \name{Roberto Olvera-Hernandez}
-\title{PhD student - Biomedical Sciences (Computational Genomics) \\ \footnotesize{Latin American (Mexican) - he/him}}
+\title{Ph.D. student - Biomedical Sciences (Computational Genomics) \\ \footnotesize{Latin American (Mexican) - he/him}}
 \email{rolvhdez@ccg.unam.mx}
 \location{Zapopan}{Jalisco}{MX}
 \phone{+52}{33-1540-9988}
@@ -27,9 +24,9 @@
 \newcommand{\mydot}{\raisebox{0.5 ex}{.}\ }
 
 \begin{document}
-\setmainfont{XCharter} % Sans-serif. Body. Sans can also be set as main font. Good options include: {XCharter, Heuristica, QTBasker}
-\setsansfont{Inter} % Sans. Titles. Good options include: {Inter, Roboto, Cabin}
-\nocite{*}
+\setmainfont{Heuristica} % Sans-serif. Body. Sans can also be set as main font. Good options include: {XCharter, Heuristica, QTBasker}
+\setsansfont{Cabin} % Sans. Titles. Good options include: {Inter, Roboto, Cabin}
+% \nocite{*}
 % L = Añadir localizacion; vacio = no incluir
 \makecvheader{}
 \thispagestyle{firstpage}
@@ -90,7 +87,7 @@
         \end{itemize}
     } % Texto
 
-\cvsubsection{Meeting and Conferences}
+\cvsubsection{Meetings and Conferences}
 
     \cvevent{XX Congreso Nacional de Biotecnología y Bioingeniería} % Carrera/posgrado/puesto
     {Mexican Society of Biotechnology and Bioengineering (SMBB)} % Institución/empresa
@@ -98,11 +95,11 @@
     {} % Inicio
     {May. 2023} % Fin
     {
-        \vspace{-11pt}
-        \begin{itemize}[leftmargin=*]
+      \vspace{-0.25cm}
+      \begin{itemize}[leftmargin=*]
         \setlength{\itemsep}{0cm}
-            \item \textbf{Short communication:} \say{Rational design of a mechanism in \textit{Bacillus subtilis} to degrade glyphosate \textit{in situ} using MoClo} 
-        \end{itemize}
+        \item \textbf{Short communication:} \textcite{olvera-hernandez2023}.
+      \end{itemize}
     } % Texto
 
     \cvevent{BerryVax (ITESO) - Online Jamboree} % Carrera/posgrado/puesto
@@ -172,69 +169,71 @@
 % PUBLICACIONES
 % ------------
 \cvsection{\publications Publications}
-\cvsubsection{Articles}
+\cvsubsection{Articles}\vspace{-0.5cm}
 \printbibliography[heading=none]
-    
-% ------------
-% HABILIDADES
-% ------------
-
-\setlength\columnsep{0.33in}
-\begin{multicols}{2}
-
-\cvsection{\lang Languages}
-
-\textbf{Spanish (native)}\\
-    \cvskill{Writing}{5}
-    \cvskill{Reading}{5}
-    \cvskill{Conversation}{5}
 
 \medskip
+    
+\begin{multicols}{2}
+  
 
-\textbf{English (TOEFL iBT - C1)}\\
-    \cvskill{Writing}{4}
-    \cvskill{Reading}{5}
-    \cvskill{Conversation}{4}
+  % ------------
+  % IDIOMAS
+  % ------------
+  \cvsection{\lang Languages}
+  \textbf{Spanish (native)}\\
+      \cvskill{Writing}{5}
+      \cvskill{Reading}{5}
+      \cvskill{Conversation}{5}
 
-\cvsection{\courses Courses and certifications} % Cursos, talleres y certificaciones.
+  \medskip
 
-\cvevent{Ph.D. Selected Topic - \say{Clinical, Genetic, and Molecular Aspects of Obesity, Type 2 Diabetes, and Metabolic Syndrome. From the Clinic to Omics Sciences}}
-    {USMBB - IBt UNAM}
-    {}
-    {Feb. 2025}{}
-    {}
+  \textbf{English (TOEFL iBT - C1)}\\
+      \cvskill{Writing}{4}
+      \cvskill{Reading}{5}
+      \cvskill{Conversation}{4}
 
-\cvevent{Course - \say{Bioinformatic Tools for High-Throughput Sequencing}}
-    {USMBB - IBt UNAM}
-    {}
-    {}{Jul. 2023}
-    {Teacher Assistant in the "Programming with R" workshop.}
+\vfill\null\columnbreak
 
-\cvevent{Course - \say{Synthetic Biology and Genetic Circuits 101}}
-    {Scintia}
-    {}
-    {}{Jul. 2021}
-    {}
+  % ------------
+  % COURSES
+  % ------------
+  \cvsection{\courses Courses and certifications} % Cursos, talleres y certificaciones.
+  \cvevent{Ph.D. Selected Topic - \say{Clinical, Genetic, and Molecular Aspects of Obesity, Type 2 Diabetes, and Metabolic Syndrome. From the Clinic to Omics Sciences}}
+      {Unidad de Investigación Médica en Bioquímica. Unidad Médica de Alta Especialidad “Dr. Bernardo Sepúlveda”, Centro Médico Nacional Siglo XXI, IMSS, CDMX.}
+      {}
+      {Feb. 2025}{ongoing}
+      {}
 
-\cvevent{Workshop - \say{Malice Analysis for your Project}}
-    {Engineering Biology Research Consortium (EBRC)}
-    {}
-    {}{Feb. 2021}
-    {}
+  \cvevent{Course - \say{Bioinformatic Tools for High-Throughput Sequencing}}
+      {USMBB - IBt UNAM}
+      {}
+      {}{Jul. 2023}
+      {Teacher Assistant in the "Programming with R" workshop.}
 
-\cvevent{Course - \say{Agile Process, Project, and Program Controls}}
-    {Engineering Biology Research Consortium (EBRC)}
-    {}
-    {}{Feb. 2021}
-    {}
+  \cvevent{Course - \say{Synthetic Biology and Genetic Circuits 101}}
+      {Scintia}
+      {}
+      {}{Jul. 2021}
+      {}
 
-{\small
-  \begin{itemize}[leftmargin=*]
-  \setlength{\itemsep}{6pt}
-    \item \textbf{Course: \say{Agile Process, Project, and Program Controls}}\\February 2021 (28 hours), online course from \textit{HarvardX}.
-    \item \textbf{Data Science: R Basics}\\August 2020 (60 hours), online course from \textit{HarvardX}.
-  \end{itemize}
-}
+  \cvevent{Workshop - \say{Malice Analysis for your Project}}
+      {Engineering Biology Research Consortium (EBRC)}
+      {}
+      {}{Feb. 2021}
+      {}
 
+  \cvevent{Course - \say{Agile Process, Project, and Program Controls}}
+      {Engineering Biology Research Consortium (EBRC)}
+      {}
+      {}{Feb. 2021}
+      {}
+
+  \cvevent{Data Science: R Basics}
+      {Engineering Biology Research Consortium (EBRC)}
+      {}
+      {}{Aug. 2020}
+      {}
 \end{multicols}
+
 \end{document}
