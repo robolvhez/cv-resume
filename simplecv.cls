@@ -113,7 +113,7 @@
 % CV Event
 % --------------------------
 \newcommand{\cvevent}[6]{
-  \begin{tabular*}{\linewidth}{p{0.12\linewidth} p{0.83\linewidth}}
+  \begin{tabular*}{\linewidth}{p{0.20\linewidth} p{0.80\linewidth}}
       \ifstrequal{#4}{}{\small #5}{\small #4 - #5} % Any Text (not required)                          
       & {\small\bf #1}\\
       {} 
@@ -163,7 +163,7 @@
             \draw  let \p1=($(current page.north)-(current page header area.south)$),
                 \n1={veclen(\x1,\y1)} in
             node [inner sep=0,outer sep=0,below right] 
-                at (current page.north west){\includegraphics[width=\paperwidth]{foot.png}};
+                at (current page.north west){\includegraphics[width=\paperwidth]{img/foot.png}};
             \end{tikzpicture}}
     \cfoot{}
 
@@ -172,7 +172,7 @@
             \draw  let \p1=($(current page.north)-(current page header area.south)$),
                 \n1={veclen(\x1,\y1)} in
             node [inner sep=0,outer sep=0,below right] 
-                at (current page.north west){\includegraphics[width=\paperwidth]{header.png}};
+                at (current page.north west){\includegraphics[width=\paperwidth]{img/header.png}};
             \end{tikzpicture}}
 
         %\fancyfoot[R]{\begin{tikzpicture}[remember picture,overlay]
