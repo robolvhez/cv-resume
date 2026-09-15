@@ -112,22 +112,38 @@
 % --------------------------
 % CV Event
 % --------------------------
-\newcommand{\cvevent}[6]{
-  \begin{tabular*}{\linewidth}{p{0.20\linewidth} p{0.80\linewidth}}
-      \ifstrequal{#4}{}{\small #5}{\small #4 - #5} % Any Text (not required)                          
-      & {\small\bf #1}\\
-      {} 
-      & {\sffamily\footnotesize #2 \hfill #3}
-      \ifstrequal{#6}{}{}{\\&{\footnotesize #6}} % Any Text (not required)                          
+\newcommand{\cvevent}[7][]{
+  \begin{tabular*}{\linewidth}{p{0.10\linewidth} p{0.90\linewidth}}
+      \ifstrequal{#1}{}{}{
+        \vspace{0pt}
+        \centering
+        \includegraphics[width=\linewidth,height=1.06cm,keepaspectratio]{#1}
+      }
+      & \vspace{0pt}{\small\bf #2}%
+      \ifstrequal{#3}{}{}{\newline {\sffamily\footnotesize #3}}%
+      \ifstrequal{#5}{}{%
+          \ifstrequal{#6}{}{}{\newline {\sffamily\footnotesize\color{darkgray} #6}}%
+      }{%
+          \newline {\sffamily\footnotesize\color{darkgray} #5 - #6}%
+      }%
+      \ifstrequal{#4}{}{}{\newline {\sffamily\footnotesize\color{darkgray} #4}}%
+      \ifstrequal{#7}{}{}{\vspace{2pt}\newline {\footnotesize #7}}
   \end{tabular*}
   \smallskip
-  % \vspace{-0.5em}
-  %    \begin{tabular*}{\linewidth}{p{0.125\linewidth} p{0.85\linewidth}}
-  %        {\small\it #4 - #5} & {\bf #1}\\ % Position
-  %                            & {\sffamily\footnotesize\color{gray} #2 \hfill  #3}
-  %        \ifstrequal{#6}{}{}{\\&{\footnotesize #6}} % Any Text (not required)                          
-  %    \end{tabular*}
-  %    \vspace{-0.5em}
+}
+\newcommand{\cvcourse}[6]{
+  \begin{tabular*}{\linewidth}{p{\linewidth}}
+      \vspace{0pt}{\small\bf #1}%
+      \ifstrequal{#2}{}{}{\newline {\sffamily\footnotesize #2}}%
+      \ifstrequal{#4}{}{%
+          \ifstrequal{#5}{}{}{\newline {\sffamily\footnotesize\color{darkgray} #5}}%
+      }{%
+          \newline {\sffamily\footnotesize\color{darkgray} #4 - #5}%
+      }%
+      \ifstrequal{#3}{}{}{\newline {\sffamily\footnotesize\color{darkgray} #3}}%
+      \ifstrequal{#6}{}{}{\vspace{2pt}\newline {\footnotesize #6}}
+  \end{tabular*}
+  \smallskip
 }
 
 % --------------------------

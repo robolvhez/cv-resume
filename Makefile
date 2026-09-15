@@ -11,7 +11,7 @@ TEXFLAGS  := -shell-escape -interaction=nonstopmode -halt-on-error
 OUTDIR    := build
 
 # Source files (used for dependency tracking)
-TEX_FILES := $(MAIN).tex $(wildcard slides/*.tex) $(wildcard slides/**/*.tex)
+TEX_FILES := $(MAIN).tex $(wildcard slides/*.tex) $(wildcard slides/**/*.tex) $(wildcard *.cls)
 STY_FILES := $(wildcard *.sty)
 BIB_FILES := $(wildcard *.bib)
 IMG_FILES := $(shell find img -type f 2>/dev/null)
