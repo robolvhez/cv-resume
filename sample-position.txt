@@ -1,0 +1,134 @@
+View all jobs
+Senior Software Engineer
+Mexico City, Mexico • Mexico - Remote
+Engineering
+Remote
+Full-time
+Who We Are & What We Do 
+
+At Helix, our mission is simple: to help everyone improve their lives through their DNA. Ready to make a real-world impact with your skills? At Helix, we're transforming healthcare by making genomics a standard of care. We partner with health systems and life science companies to accelerate the integration of genomic data into clinical practice. Join us in building a future where healthcare is personalized, proactive, and powered by genomics. 
+
+Your Career Path & Development
+
+We are committed to your long-term growth. We invest in you through:
+AI-Native Engineering: We've standardized on a strong, well-integrated set of agentic coding tools, so you spend your time directing agents that plan, write, and test code rather than evaluating a dozen options yourself.
+Continuous Learning: Sharpen your skills with full access to the entire Udemy learning database.
+Internal Mentorship: Learn from experts across our global team through tech demos, pair programming, and collaborative projects.
+Clear Advancement: We provide a framework for you to grow from one role to the next, with clear expectations and support from your manager.
+Travel: Opportunities to travel to the US for collaboration with our global teams.
+
+What is special about these roles?
+
+At Helix, our engineering teams build the systems that make genomic medicine real - from the lab bench to the patient portal to the research platform. We're hiring at the Senior and Senior II levels across four teams. Depending on your background and interests, you may be matched to one of the following:
+
+Experience (Patient & Provider) - Builds the product experiences that connect patients, health systems, and healthcare providers to genomic insights. The Patient team (PHP) owns the HRN enrollment flow, results delivery, and accessioning integrations. The Provider team (PRO) simplifies the ordering, management, and billing of clinical genetic tests.
+Lab Systems (LABS) - Owns the laboratory-facing services that keeps Helix’s sequencing & supply chain operations running. You’ll build and maintain scalable platforms and fullstack software that support the lab and integrates with analysis pipelines: lab workflows, instrument automations, sample accessioning, inventory management and distribution.
+Data, Operations & Governance (DOG) - Owns how Helix accesses, models, and governs its data. This team builds the backend services, APIs, pipelines and infrastructure behind it, and owns the core data model that Strategy and Operations teams build on. Governance and privacy are a core mandate and the team owns the services that track which data exists, who can use it, and how it's accessed.
+Genomics Platform (GENP) - Builds the infrastructure, pipelines, and applications that process terabytes of genomic data weekly. Supports exome sequencing, confirmation testing, bioinformatics QC, and return-of-results workflows.
+
+As a Senior Software Engineer, you will:
+
+Lead projects from scoping through implementation to successful outcomes — not just output, but real impact for the business and users.
+Delegate implementation to AI agents with precise, unambiguous instructions, then critically evaluate output for correctness and production-readiness using evals and other quality checks, maintaining audit-ready compliance throughout. 
+Explore and champion new AI tools, frameworks, and workflows, including orchestrating multiple AI agents across a pipeline; document pros/cons, best practices, and pitfalls; and create reusable prompt templates or context frameworks that elevate the entire team's AI fluency.
+Design and implement software systems for Helix's products and services, delivering well-tested, performant, and reliable solutions that consider the full lifecycle of a project (including on-call).
+Take ownership of services and significant areas of the codebase, developing deep domain expertise and serving as a go-to technical resource for your team.
+Collaborate cross-functionally with product managers, designers, user experience researchers, scientists, and business leaders to drive meaningful outcomes.
+Proactively identify and address technical debt before it becomes a long-term problem, and encourage and enable your team to do the same.
+Mentor engineers within your team and contribute to improving engineering practices, with growing influence beyond your immediate team.
+Contribute to setting technical standards and participate in decision-making that affects teams beyond your direct sphere of influence.
+
+About you:
+
+Bachelor's or Master's degree in Computer Science or a related field.
+7+ years of equivalent professional experience as a Software Engineer.
+Proficiency with distributed systems built on cloud infrastructure - AWS, GCP, Azure, or similar.
+Strong engineering expertise with proficiency in an established language - backend (Go, Java, Python, Scala, Rust) or full-stack (TypeScript/React + a backend language)
+Daily, hands-on use of AI coding harnesses as a core part of your development workflow.
+Demonstrated ability to delegate implementation work to AI agents. This means decomposing problems, writing clear and precise instructions, and iterating on prompts to get production-quality results.
+Solid understanding of software engineering best practices including testing, code review, CI/CD, and observability.
+Demonstrated ability to take a nebulous project, scope it, determine a solution and course of action, and implement and launch it with minimal external guidance.
+A strong product engineering mindset with a clear focus on customer and business outcomes.
+Experience mentoring other engineers and a track record of elevating the practices of those around you.
+Familiarity with infrastructure-as-code tooling/frameworks (e.g., Terraform, CloudFormation, AWS CDK).
+Familiarity with database design, data manipulation, and data quality techniques.
+Adaptable in a fast-paced startup environment where priorities may change quickly and frequently.
+Demonstrated willingness to learn new domains (e.g., genomics, healthcare) and associated technologies.
+Fluent in English, both written and spoken.
+
+Pluses:
+
+Familiarity with regulated software systems in any industry (e.g., HIPAA, ISO, FDA).
+Familiarity and experience developing and architecting event-driven architectures.
+Experience with AWS technologies and serverless infrastructure.
+Experience in the life sciences/pharmaceutical industry.
+
+What We Offer: A Commitment to Your Success
+We take care of our team with benefits that provide flexibility and support for your growth—what we call prestaciones superiores a las de la ley. 
+Competitive Compensation: A strong base salary plus an annual performance bonus.
+Expected Helix Base: $101,333 - $150,750 MXN/monthly
+Expected Helix Discretionary Annual Bonus: 5-10% of your annual salary
+Comprehensive Health: 100% employer-paid premium for our Bronze Family Health Insurance plan, with eligibility from your first day.
+Allowances & Stipends:
+Home Office Stipend: we will reimburse up to $500 USD for essential workspace items, so you are fully equipped to perform your best. 
+Phone Allowance: 700 MXP monthly.
+In-Office Perks: 80 MXP daily for transport and 250 MXP daily for snacks on office days.
+Generous Time Off: Flexible vacation policy plus all national holidays.
+Hybrid & Remote Flexibility:
+Hybrid: Our office is located at WeWork - Varsovia, Mexico City. We gather intentionally in our office space once per week to work on things like pair programming/live collaboration, skillshare sessions, social segments, team lunches, and volunteering opportunities. Juárez, Cuauhtémoc, CDMX.
+Remote (for team members living 80 km or more outside Mexico City): We'll invite you to our CDMX office 3-6 times a year for key training and team meetings. These visits are a great chance to connect in person and strengthen our Helix community. Helix cover travel and accommodation.
+
+Expected Interview Process:
+1) Recruiter Screen 2) Technical Interviews 3) Leadership Interviews
+
+What To Expect During Your Onboarding Week:
+We want to make sure your first week is spent learning the foundations. You will be invited to live orientation sessions and spend time with your hiring manager developing your individual roadmap to success. This experience will include sessions that cover your benefits, security & privacy training, an introduction to the OKR framework used at Helix and our communication tools and norms. 
+
+What To Expect During Your First 90 days:
+First 5 days: You’ll spend time learning the Helix way, completing training and onboarding for your roles, and getting introduced to your team and relevant stakeholders. You’ll also gain a deeper understanding of our customers, our products, the impact we make in the lives of our communities, and how to thrive at Helix through participation in Helix U.  
+
+Day 6 - 30: You’ll spend time contributing to projects, deeply familiarizing yourself with team and company processes, and developing a deeper understanding of Helix’s products, services and capabilities. 
+
+Day 31 - 90: You’ll build your OKRs with your manager, start to take ownership of projects and initiatives on your team, and begin to demonstrate your impact on the Helix mission. 
+
+To learn how Helix collects, uses, and protects your personal information during the recruitment process, please review our Privacy Notice.
+
+Helix is proud to be an equal opportunity employer, and committed to providing employment opportunities regardless of race, religious creed, color, national origin, ancestry, physical disability, mental disability, medical condition, genetic information, marital status, sex, gender, gender identity, gender expression, pregnancy, childbirth and breastfeeding, age, sexual orientation, military or veteran status, or any other protected classification, in accordance with applicable federal, state, and local laws.
+
+Ready to apply?
+Powered by
+Gem Logo
+First name *
+Last name *
+Email *
+LinkedIn URL
+Resume *
+Click to upload or drag and drop here
+Voluntary Self-Identification
+To comply with government reporting requirements, we invite candidates to participate in the self-identification survey below. Your completion of this form is entirely optional, and your decision will neither influence the hiring process nor any subsequent stages. Any information you choose to share will be kept confidential and stored in a secure file. As outlined in our Equal Employment Opportunity policy, we uphold a commitment to non-discrimination based on any protected group status specified in applicable laws.
+Gender
+
+Please select
+Race
+
+Please select
+Race and ethnicity descriptionsExpand
+Voluntary Self-Identification of Veteran Status
+VEVRAA requires Government contractors to take affirmative action to employ and advance in employment protected veterans. To help us measure the effectiveness of our outreach and recruitment efforts of veterans, we are asking you to tell us if you are a veteran covered by VEVRAA. If you believe that you belong to any of the following categories of protected veterans, please indicate by making the appropriate selection.
+Veteran status descriptionsCollapse
+Disabled veteran
+A veteran who served on active duty in the U.S. military and is entitled to disability compensation (or who but for the receipt of military retired pay would be entitled to disability compensation) under laws administered by the Secretary of Veterans Affairs, or was discharged or released from active duty because of a service-connected disability
+Recently separated veteran
+A veteran separated during the three-year period beginning on the date of the veteran's discharge or release from active duty in the U.S military, ground, naval, or air service
+Active duty wartime or campaign badge veteran
+A veteran who served on active duty in the U.S. military during a war, or in a campaign or expedition for which a campaign badge was authorized under the laws administered by the Department of Defense
+Armed Forces service medal veteran
+A veteran who, while serving on active duty in the U.S. military ground, naval, or air service, participated in a United States military operation for which an Armed Forces service medal was awarded pursuant to Executive Order 12985 (61 Fed. Reg. 1209).
+Veteran status
+
+Please select
+By applying you agree to Gem's terms and privacy policy.
+Save your info to apply to other roles faster & help employers reach you.
+Apply and save
+Apply without saving
+Req ID: R824

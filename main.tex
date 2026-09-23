@@ -2,7 +2,7 @@
 \documentclass{simplecv}
 % \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
-\usepackage[spanish]{babel}
+\usepackage[spanish, english]{babel}
 \usepackage[margin=0.75in]{geometry}
 \usepackage{dirtytalk}
 \usepackage{multicol}
@@ -14,7 +14,7 @@
 
 % Header information
 \name{Roberto Olvera-Hernandez}
-\title{Ph.D. student --- Biomedical Sciences \& Computational Genomics}
+\title{Bioinformatics Software Engineer}
 \email{roberto.olvhez@gmail.com}
 \location{Zapopan}{Jalisco}{MX}
 \phone{+52}{33-1540-9988}
@@ -24,219 +24,135 @@
 \newcommand{\mydot}{\raisebox{0.5 ex}{.}\ }
 
 \begin{document}
-\setmainfont{XCharter} % Sans-serif. Body. Sans can also be set as main font. Good options include: {XCharter, Heuristica, QTBasker}
-\setsansfont{Cabin} % Sans. Titles. Good options include: {Inter, Roboto, Cabin}
-% L = Añadir localizacion; vacio = no incluir
+\setmainfont{XCharter} % Sans-serif. Body.
+\setsansfont{Cabin} % Sans. Titles.
 \makecvheader{}
 \thispagestyle{firstpage}
-
-% ----------------
-% Instructions to apply here: https://lpshg.com/how-to-apply/
-%
-% To Include in the CV:
-%   Education/professional experience
-%   Gender and Race/ethnicity – will use to track diversity indicators
-%   A brief justification for attendance (half-page max)
-%   An outline of current research (half-page max)
-%   A list of relevant publications
-%   Participation in meetings/conferences
-%   Awards, scholarships, grants
-%
-% ----------------
-
-% ------------
-% EDUCATION
-% ------------
-\cvsection{\education Academic career}
-
-    \cvevent{Ph.D. in the Doctoral Program of Biomedical Sciences (PDCB)} % Carrera/posgrado/puesto
-    {Center for Genomic Sciences (CCG) --- UNAM (\href{https://www.sohaillab.com/}{Sohail Lab})} % Institución/empresa
-    {Cuernavaca, Morelos, MX.} % Lugar
-    {Feb. 2025} % Inicio
-    {ongoing} % Fin
-    {
-        \vspace{-11pt}
-        \begin{itemize}[leftmargin=*]
-        \setlength{\itemsep}{0cm}
-          \item \textbf{Research project:} \say{Genome-wide Association Studies free of population confounds for complex traits and diseases for over 100 thousand Mexicans}
-          \item \textbf{Supervisor:} Dr. Mashaal Sohail
-          \item \textbf{Collaborators:} Dr. Jason Torres, Dr. Alexander T. Young
-        \end{itemize}
-    } % Texto
-
-    \cvevent{B.Sc. in Biotechnology Engineering} % Carrera/posgrado/puesto
-    {Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO)} % Institución/empresa
-    {San Pedro Tlaquepaque, Jalisco, MX.} % Lugar
-    {2018} % Inicio
-    {2023} % Fin
-    {} % Texto
-
-\cvsubsection{Research placements}
-
-    \cvevent{MCPS --- Research Placement} % Carrera/posgrado/puesto
-    {Nuffield Department of Public Health (NDPH) --- University of Oxford} % Institución/empresa
-    {Oxford, Oxfordshire, U.K.} % Lugar
-    {Aug. 2025} % Inicio
-    {Jan. 2026} % Fin
-    {
-        \vspace{-5pt}
-
-        Developed a robust within-family GWAS pipeline for
-        MCPS, enabling unbiased heritability and genetic correlation
-        estimates for 15 complex traits---directly addressing confounding
-        from population structure and shared environment in a highly admixed
-        cohort.
-
-        \begin{itemize}[leftmargin=*]
-        \setlength{\itemsep}{0cm}
-            \item \textbf{Supervisors:} Dr. Jason Torres, Dr. Diego Aguilar-Ramirez
-        \end{itemize}
-    } % Texto
-
-    \cvevent{Bachelor thesis} % Carrera/posgrado/puesto
-    {Institute of Biotecnology (IBt) --- UNAM} % Institución/empresa
-    {Cuernavaca, Morelos, MX.} % Lugar
-    {Aug. 2023} % Inicio
-    {Dec. 2023} % Fin
-    {
-        \vspace{-11pt}
-        \begin{itemize}[leftmargin=*]
-        \setlength{\itemsep}{0cm}
-            \item \textbf{Thesis title:} \say{Genome-Wide Association Study (GWAS) for the identification of genes related to hydrotropic response in native maize (\textit{Zea mays} L.) from Mexico.}
-            \item \textbf{Supervisor:} Dr. Gladys Iliana Cassab López
-        \end{itemize}
-    } % Texto
-
-\cvsubsection{Meetings and Conferences}
-
-    \cvevent{XX Congreso Nacional de Biotecnología y Bioingeniería} % Carrera/posgrado/puesto
-    {Mexican Society of Biotechnology and Bioengineering (SMBB)} % Institución/empresa
-    {} % Lugar
-    {} % Inicio
-    {May. 2023} % Fin
-    {
-      \vspace{-0.25cm}
-      \begin{itemize}[leftmargin=*]
-        \setlength{\itemsep}{0cm}
-        \item \textbf{Short communication:} \url{https://smbb.
-        mx/revista-biotecnologia-2023-vol-27-no-4-2/}
-      \end{itemize}
-    } % Texto
-
-    \cvevent{BerryVax (ITESO) - Online Jamboree} % Carrera/posgrado/puesto
-    {iGEM Design League} % Institución/empresa
-    {} % Lugar
-    {} % Inicio
-    {Nov. 2021} % Fin
-    {
-        \vspace{-11pt}
-        \begin{itemize}[leftmargin=*]
-        \setlength{\itemsep}{0cm}
-            \item \textbf{Project presentation:} \say{Use of \textit{Bacillus subtilis} as biological machine for easy detection and elimination of plagues in berries} 
-            \item \textbf{Awards:} Silver Medal \mydot Best Presentation
-        \end{itemize}
-    } % Texto
 
 % ------------
 % EXPERIENCE
 % ------------
-\cvsection{\job Professional career}
+\cvsection{\job Professional \& Research Experience}
 
-    %% Income Analyst - TOKA Internacional
-    \cvevent{Income Analyst}
-        {TOKA Internacional}
-        {Zapopan, Jalisco, MX.}
-        {2024}{2025}
-        {
-            \vspace{-5pt}
-            Income monitoring and diagnosis within the \textit{fintech} market \mydot Development of SQL/R scripts for massive data analysis \mydot Generation and updating Power BI productive dashboards \mydot Mapping and standardization of management processes such as billing.
-        }
+    \cvevent{Computational Genomics Researcher}
+    {Center for Genomic Sciences (CCG) --- UNAM}
+    {Cuernavaca, MX}
+    {Feb. 2025}
+    {Present}
+    {
+        \vspace{-5pt}
+        Leading the design and implementation of scalable bioinformatics pipelines for processing genomic data from over 100,000 individuals on cloud infrastructure (DNAnexus; AWS/Azure).
+        \begin{itemize}[leftmargin=*]
+        \setlength{\itemsep}{0cm}
+          \item \textbf{Software Development:} Engineered an ETL pipeline for large-scale genome-wide association studies (GWAS), optimizing data transformation and variant-calling workflows for high-throughput analyses.
+          \item \textbf{Clinical data structring:} Designed and made a prototype of a OMOP data infrastructure for the prospective study, compending over 200 phenot.
+          \item \textbf{AI-Assisted Engineering:} Leveraging AI coding tools for rapid prototyping, pipeline testing, and automation of complex data workflows.
+          \item \textbf{Cross-functional Collaboration:} Partnering with international teams to ensure production-readiness and robust data governance for large-scale genetic pipelines.
+        \end{itemize}
+    }
 
-    %% Animal Health Diagnostics Trainee %%
-    \cvevent{Animal Health Diagnostics Trainee}
-        {Boehringer Ingelheim --- Vetmedica}
-        {Zapopan, Jalisco, MX.}
-        {2021}{2022}
-        {%
-            \vspace{-5pt}
-            NGS protocols for animal viral surveillance \mydot Implementation of Power BI for the marketing team \mydot Document automation using AI \mydot Serological and molecular biology diagnostics \mydot Lab supply management
-        }
+    \cvevent{Genetic Epidemiology --- Research Placement}
+    {Nuffield Department of Public Health (NDPH) --- University of Oxford}
+    {Oxford, U.K.}
+    {Aug. 2025}
+    {Jan. 2026}
+    {
+        \vspace{-5pt}
+        Developed and maintained a robust computational pipeline for within-family GWAS, directly addressing confounding from population structure in highly admixed cohorts.
+        \begin{itemize}[leftmargin=*]
+        \setlength{\itemsep}{0cm}
+            \item \textbf{Data Pipelines:} Architected and deployed cloud-native pipelines for epidemiological data analysis, transitioning complex statistical models into scalable workflows.
+            \item \textbf{Statistical Genetics:} Implemented advanced statistical genetics tools to extract unbiased heritability and genetic correlation estimates.
+        \end{itemize}
+    }
 
-    % iGEM 2022
-    \cvevent{Project Leader - International Competition}
-        {iGEM Design League 2021 (Latin America)}
-        {}
-        {2020}{2021}
-        {%
-            \vspace{-5pt}
-            Awarded Silver Medal and Best Project Presentation \mydot Project at the Latin American level \mydot Interviews with farmers and entrepreneurs for market strategies \mydot Training of the technical team in Synthetic Biology
-        }
+    \cvevent{Income Data Analyst}
+    {TOKA Internacional}
+    {Zapopan, MX}
+    {2024}
+    {2025}
+    {
+        \vspace{-5pt}
+        Spearheaded the modernization of a fragile billing process for millions of monthly transactions, navigating a rapid migration from local servers to Azure.
+        \begin{itemize}[leftmargin=*]
+        \setlength{\itemsep}{0cm}
+            \item \textbf{ETL \& Orchestration:} Architected and deployed an automated ETL pipeline using Python and Dagster, replacing fragile manual SQL processes and ensuring reliable fee processing.
+            \item \textbf{Business Intelligence:} Automated the data delivery lifecycle, integrating the pipeline to publish results directly to Power BI and auto-email PDF/Excel reports to collaborators.
+            \item \textbf{Cloud Migration:} Successfully adapted the data architecture and orchestration logic to Azure during a rapid cloud transition.
+        \end{itemize}
+    }
+
+    \cvevent{Trainee}
+    {Boehringer Ingelheim --- Vetmedica}
+    {Zapopan, MX}
+    {2021}
+    {2022}
+    {
+        \vspace{-5pt}
+        Bridged wet-lab operations and bioinformatics within an animal health laboratory, supporting viral genomic surveillance for veterinary vaccine development.
+        \begin{itemize}[leftmargin=*]
+        \setlength{\itemsep}{0cm}
+            \item \textbf{Data Processing:} Engineered an automated data processing pipeline with Microsoft's Automation tools: extracting veterinary diagnostics information with AI from handwritten PDFs, directly into relational databases. Allowing collaborators to keep track of diagnosis through dashboards. 
+            \item \textbf{Wet-Lab:} Executed Illumina MiSeq sequencing and qPCR, building a strong understanding of sample processing and DNA/RNA analysis.
+            \item \textbf{Early bioinformatics:} Conducted preliminary viral evolution tracking across agricultural sites, analyzing genomic data to support animal health and vaccine research efforts.
+        \end{itemize}
+    }
 
 % ------------
-% PUBLICACIONES
+% EDUCATION
 % ------------
+\cvsection{\education Education}
 
-% \cvsection{\publications Publications}
-% \cvsubsection{Articles}\vspace{-0.5cm}
-% \printbibliography[heading=none]
+    \cvevent{Ph.D. in Biomedical Sciences (Genomics Focus)}
+    {Center for Genomic Sciences (CCG) --- UNAM}
+    {Cuernavaca, MX}
+    {2025}
+    {Present}
+    {}
 
-\medskip
-    
+    \cvevent{B.Sc. in Biotechnology Engineering}
+    {ITESO}
+    {Guadalajara, MX}
+    {2018}
+    {2023}
+    {}
+
+\vspace{0.3cm}
 \begin{multicols}{2}
   
+  % ------------
+  % SKILLS
+  % ------------
+  \cvsection{\courses Technical Skills}
+  \textbf{Programming:} Python, R, Bash, SQL, Git \\
+  \textbf{Cloud/Infra:} DNAnexus, AWS (basics), Linux \\
+  \textbf{Genomics:} Population \& Statistical Genetics, GWAS \\
+  \textbf{AI Tools:} Agentic coding tools, Prompt engineering \\
 
   % ------------
-  % IDIOMAS
+  % LANGUAGES
   % ------------
   \cvsection{\lang Languages}
-  \textbf{Spanish (native)}\\
-      \cvskill{Writing}{5}
-      \cvskill{Reading}{5}
-      \cvskill{Conversation}{5}
-
-  \medskip
-
-  \textbf{English (TOEFL iBT - C1)}\\
-      \cvskill{Writing}{4}
-      \cvskill{Reading}{5}
-      \cvskill{Conversation}{4}
+  \textbf{Spanish:} Native \\
+  \textbf{English:} Fluent (TOEFL iBT - C1)
 
 \vfill\null\columnbreak
 
   % ------------
-  % COURSES
+  % CERTIFICATIONS
   % ------------
-  \cvsection{\courses Courses and certifications} % Cursos, talleres y certificaciones.
-  \cvevent{Ph.D. Selected Topic --- \say{Clinical, Genetic, and Molecular Aspects of Obesity, Type 2 Diabetes, and Metabolic Syndrome. From the Clinic to Omics Sciences}}
-      {Unidad de Investigación Médica en Bioquímica. Unidad Médica de Alta Especialidad “Dr. Bernardo Sepúlveda”, Centro Médico Nacional Siglo XXI, IMSS, CDMX.}
-      {}
-      {Feb. 2025}{May. 2025}
-      {}
-  \cvevent{Course - \say{Bioinformatic Tools for High-Throughput Sequencing}}
+  \cvsection{\courses Certifications}
+  \cvevent{Bioinformatic Tools for High-Throughput Sequencing}
       {USMBB - IBt UNAM}
       {}
       {}{Jul. 2023}
-      {Teacher Assistant in the "Programming with R" workshop.}
-  \cvevent{Course - \say{Synthetic Biology and Genetic Circuits 101}}
-      {Scintia}
-      {}
-      {}{Jul. 2021}
-      {}
-  \cvevent{Workshop - \say{Malice Analysis for your Project}}
-      {Engineering Biology Research Consortium (EBRC)}
-      {}
-      {}{Feb. 2021}
-      {}
-  \cvevent{Course - \say{Agile Process, Project, and Program Controls}}
-      {Engineering Biology Research Consortium (EBRC)}
-      {}
-      {}{Feb. 2021}
       {}
   \cvevent{Data Science: R Basics}
-      {Engineering Biology Research Consortium (EBRC)}
+      {EBRC}
       {}
       {}{Aug. 2020}
       {}
+
 \end{multicols}
 
 \end{document}
