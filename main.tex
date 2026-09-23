@@ -1,5 +1,6 @@
 % !TeX program = lualatex
-\documentclass{simplecv}
+% !TeX root = main.tex
+\documentclass[10pt]{simplecv}
 % \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
 \usepackage[spanish, english]{babel}
@@ -13,8 +14,8 @@
 \addbibresource{mybiblio.bib}
 
 % Header information
-\name{Roberto Olvera-Hernandez}
-\title{Bioinformatics Software Engineer}
+\name{Roberto Olvera Hernández}
+\title{Bioinformatics Scientist}
 \email{roberto.olvhez@gmail.com}
 \location{Zapopan}{Jalisco}{MX}
 \phone{+52}{33-1540-9988}
@@ -23,57 +24,75 @@
 
 \newcommand{\mydot}{\raisebox{0.5 ex}{.}\ }
 
+\setstretch{1.25}
+
 \begin{document}
-\setmainfont{XCharter} % Sans-serif. Body.
-\setsansfont{Cabin} % Sans. Titles.
+\setmainfont{Inter} % Sans-serif. Body.
+\setsansfont{XCharter} % Sans. Titles.
 \makecvheader{}
 \thispagestyle{firstpage}
+
+%\vspace{0.25cm}
+{\small
+Bioinformatics Scientist specializing in computational genomics and cloud infrastructure. I manage terabyte-scale genetic data for the Mexico City Prospective Study in collaboration with Oxford University. I build automated ETL pipelines on DNAnexus and develop web platforms to make complex genomic data accessible. My primary focus is writing scalable code to untangle disease risks for diverse, mixed-ancestry populations that are often left out of standard research.
+}
+\vspace{0.5cm}
 
 % ------------
 % EXPERIENCE
 % ------------
 \cvsection{\job Professional \& Research Experience}
 
-    \cvevent{Computational Genomics Researcher}
-    {Center for Genomic Sciences (CCG) --- UNAM}
+    \cvevent[img/logos/unam.png]
+    {Computational Genomics Researcher}
+    {Centro de Ciencias Genómicas (CCG) --- Universidad Nacional Autónoma de México (UNAM)}
     {Cuernavaca, MX}
     {Feb. 2025}
     {Present}
     {
-        \vspace{-5pt}
-        Leading the design and implementation of scalable bioinformatics pipelines for processing genomic data from over 100,000 individuals on cloud infrastructure (DNAnexus; AWS/Azure).
+        Leading design and implementation of a scalable pipeline for genome-wide association studies (GWAS) in the Mexico City Prospective Study (MCPS), a cohort of over 140,000 patients, using cloud computing infrastructure.
+
         \begin{itemize}[leftmargin=*]
         \setlength{\itemsep}{0cm}
-          \item \textbf{Software Development:} Engineered an ETL pipeline for large-scale genome-wide association studies (GWAS), optimizing data transformation and variant-calling workflows for high-throughput analyses.
-          \item \textbf{Clinical data structring:} Designed and made a prototype of a OMOP data infrastructure for the prospective study, compending over 200 phenot.
-          \item \textbf{AI-Assisted Engineering:} Leveraging AI coding tools for rapid prototyping, pipeline testing, and automation of complex data workflows.
-          \item \textbf{Cross-functional Collaboration:} Partnering with international teams to ensure production-readiness and robust data governance for large-scale genetic pipelines.
+
+          \item \textbf{Software Development:} Engineered a scalable ETL pipeline (Python, R, and Bash) to process large-scale clinical baseline and genotype data to perform within-family GWAS and downstream analyses (e.g., LD scores, heritability, and variant-level comparisons).
+
+          \item \textbf{Cloud Infrastructure:} Maximized the AWS-based DNAnexus platform to automate our ETL pipeline, dynamically provisioning compute resources to optimize execution times and significantly reduce operational costs.
+
+          \item \textbf{Data Standardization:} Identified that unstandardized data was blocking cross-cohort research. Built a prototype ETL pipeline to map over 200 clinical phenotypes into the OMOP model to solve this interoperability problem.
+
+          \item \textbf{Cross-functional Collaboration:} Partnered with international teams to ensure production-readiness and strict data governance for large-scale genetic pipelines.
+
+          \item \textbf{AI-Assisted Engineering:} Leveraged AI coding tools (Antigravity CLI) for rapid prototyping, pipeline testing, and automation of complex data workflows.
         \end{itemize}
     }
 
-    \cvevent{Genetic Epidemiology --- Research Placement}
+    \cvevent[img/logos/oxford.png]
+    {Genetic Epidemiology --- Research Placement}
     {Nuffield Department of Public Health (NDPH) --- University of Oxford}
     {Oxford, U.K.}
     {Aug. 2025}
     {Jan. 2026}
     {
-        \vspace{-5pt}
-        Developed and maintained a robust computational pipeline for within-family GWAS, directly addressing confounding from population structure in highly admixed cohorts.
+        Invited as a visiting researcher to work directly with the Oxford team managing the genomic cohort. I used this placement to deeply understand the data structure and build strong relationships with NDPH researchers.
+
         \begin{itemize}[leftmargin=*]
         \setlength{\itemsep}{0cm}
-            \item \textbf{Data Pipelines:} Architected and deployed cloud-native pipelines for epidemiological data analysis, transitioning complex statistical models into scalable workflows.
-            \item \textbf{Statistical Genetics:} Implemented advanced statistical genetics tools to extract unbiased heritability and genetic correlation estimates.
+          \item \textbf{Workflow Standardization:} Collaborated with the team to design a standard analysis workflow for 16 complex traits. I later scaled this framework to cover additional clinical traits relevant to the Mexican population.
+          \item \textbf{Cloud Automation:} Trained directly on the DNAnexus platform. I applied this experience to architect and fully automate our cloud-based ETL pipelines.
+          \item \textbf{Genetic Epidemiology:} Sharpened my analytical skills by working alongside senior researchers to evaluate complex genomic data.
         \end{itemize}
     }
 
-    \cvevent{Income Data Analyst}
+    \cvevent[img/logos/toka.jpg]
+    {Income Data Analyst}
     {TOKA Internacional}
     {Zapopan, MX}
     {2024}
     {2025}
     {
-        \vspace{-5pt}
         Spearheaded the modernization of a fragile billing process for millions of monthly transactions, navigating a rapid migration from local servers to Azure.
+
         \begin{itemize}[leftmargin=*]
         \setlength{\itemsep}{0cm}
             \item \textbf{ETL \& Orchestration:} Architected and deployed an automated ETL pipeline using Python and Dagster, replacing fragile manual SQL processes and ensuring reliable fee processing.
@@ -82,19 +101,20 @@
         \end{itemize}
     }
 
-    \cvevent{Trainee}
+    \cvevent[img/logos/boehringer-ingelheim.png]
+    {Diagnostics Trainee}
     {Boehringer Ingelheim --- Vetmedica}
     {Zapopan, MX}
     {2021}
     {2022}
     {
-        \vspace{-5pt}
         Bridged wet-lab operations and bioinformatics within an animal health laboratory, supporting viral genomic surveillance for veterinary vaccine development.
+
         \begin{itemize}[leftmargin=*]
         \setlength{\itemsep}{0cm}
-            \item \textbf{Data Processing:} Engineered an automated data processing pipeline with Microsoft's Automation tools: extracting veterinary diagnostics information with AI from handwritten PDFs, directly into relational databases. Allowing collaborators to keep track of diagnosis through dashboards. 
-            \item \textbf{Wet-Lab:} Executed Illumina MiSeq sequencing and qPCR, building a strong understanding of sample processing and DNA/RNA analysis.
-            \item \textbf{Early bioinformatics:} Conducted preliminary viral evolution tracking across agricultural sites, analyzing genomic data to support animal health and vaccine research efforts.
+            \item \textbf{Genome sequencing:} Executed Illumina MiSeq sequencing and genome assembly protocols for viral ssRNA, building a strong understanding of sample processing in the wet lab.
+            % \item \textbf{Data Processing:} Engineered an automated data processing pipeline with Microsoft's Automation tools: extracting veterinary diagnostics information with AI from handwritten PDFs, directly into relational databases. Allowing collaborators to keep track of diagnosis through dashboards. 
+            % \item \textbf{Early bioinformatics:} Conducted preliminary viral evolution tracking across agricultural sites, analyzing genomic data to support animal health and vaccine research efforts.
         \end{itemize}
     }
 
@@ -103,15 +123,17 @@
 % ------------
 \cvsection{\education Education}
 
-    \cvevent{Ph.D. in Biomedical Sciences (Genomics Focus)}
-    {Center for Genomic Sciences (CCG) --- UNAM}
+    \cvevent[img/logos/unam.png]
+    {Ph.D. in Biomedical Sciences (Genomics Focus)}
+    {Centro de Ciencias Genómicas (CCG) --- Universidad Nacional Autónoma de México (UNAM)}
     {Cuernavaca, MX}
     {2025}
     {Present}
     {}
 
-    \cvevent{B.Sc. in Biotechnology Engineering}
-    {ITESO}
+    \cvevent[img/logos/iteso.png]
+    {B.Sc. in Biotechnology Engineering}
+    {Instituto Tecnológico y de Educación Superior de Occidente (ITESO)}
     {Guadalajara, MX}
     {2018}
     {2023}
@@ -124,17 +146,21 @@
   % SKILLS
   % ------------
   \cvsection{\courses Technical Skills}
-  \textbf{Programming:} Python, R, Bash, SQL, Git \\
-  \textbf{Cloud/Infra:} DNAnexus, AWS (basics), Linux \\
-  \textbf{Genomics:} Population \& Statistical Genetics, GWAS \\
-  \textbf{AI Tools:} Agentic coding tools, Prompt engineering \\
+    {\footnotesize
+        \textbf{Programming:} Python, R, Bash, SQL \\
+        \textbf{Cloud/Infra:} DNAnexus, AWS, Docker, Linux \\
+        \textbf{Genomics:} Population \& Statistical Genetics, Epidemiology, GWAS \\
+        \textbf{AI Tools:} Agentic coding tools like Antigravity CLI and Claude Code \\
+    }
 
   % ------------
   % LANGUAGES
   % ------------
   \cvsection{\lang Languages}
-  \textbf{Spanish:} Native \\
-  \textbf{English:} Fluent (TOEFL iBT - C1)
+    {\footnotesize
+        \textbf{Spanish:} Native \\
+        \textbf{English:} Fluent (TOEFL iBT - C1)
+    }
 
 \vfill\null\columnbreak
 
@@ -142,16 +168,24 @@
   % CERTIFICATIONS
   % ------------
   \cvsection{\courses Certifications}
-  \cvevent{Bioinformatic Tools for High-Throughput Sequencing}
-      {USMBB - IBt UNAM}
-      {}
-      {}{Jul. 2023}
-      {}
-  \cvevent{Data Science: R Basics}
-      {EBRC}
-      {}
-      {}{Aug. 2020}
-      {}
+  \cvevent[img/logos/oxford.png]
+    {Introduction to Epidemiology}
+    {Nuffield Department of Public Health (NDPH) -- University of Oxford}
+    {}
+    {}{Jun. 2026}
+    {}
+  \cvevent[img/logos/unam.png]
+    {Bioinformatic Tools for High-Throughput Sequencing}
+    {USMBB - IBt UNAM}
+    {}
+    {}{Jul. 2023}
+    {}
+  \cvevent[img/logos/erbc.jpg]
+    {Engineering Biology Malice Analysis}
+    {Engineering Biology Consortium}
+    {}
+    {}{Aug. 2020}
+    {}
 
 \end{multicols}
 
